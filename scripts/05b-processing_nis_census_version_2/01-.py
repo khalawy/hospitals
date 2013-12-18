@@ -22,23 +22,30 @@ arcpy.Buffer_analysis(inxy + "_albers", ngeogs + "nis_buffer_0_5mile","0.5 Miles
 print 'add and calc original tract area in sq. meters'
 arcpy.AddField_management(project_path + "data/input/census/census.gdb/tracts_2000","origtractarea","DOUBLE")
 arcpy.CalculateField_management(project_path + "data/input/census/census.gdb/tracts_2000","origtractarea","!shape.area@squaremeters!","PYTHON_9.3","#")
+arcpy.AddField_management(project_path + "data/input/census/census.gdb/tracts_2010","origtractarea","DOUBLE")
+arcpy.CalculateField_management(project_path + "data/input/census/census.gdb/tracts_2010","origtractarea","!shape.area@squaremeters!","PYTHON_9.3","#")
 arcpy.AddField_management(project_path + "data/input/census/census.gdb/zcta_2000","origzctaarea","DOUBLE")
 arcpy.CalculateField_management(project_path + "data/input/census/census.gdb/zcta_2000","origzctaarea","!shape.area@squaremeters!","PYTHON_9.3","#")
 
 
 print 'intersect buffer with ct2000'
 arcpy.Intersect_analysis(ngeogs + "nis_buffer_0_5mile;" + project_path + "data/input/census/census.gdb/tracts_2000",ngeogs + "nis_buffer_0_5mile_ct2000_int","ALL","#","INPUT")
+arcpy.Intersect_analysis(ngeogs + "nis_buffer_0_5mile;" + project_path + "data/input/census/census.gdb/tracts_2010",ngeogs + "nis_buffer_0_5mile_ct2010_int","ALL","#","INPUT")
 arcpy.Intersect_analysis(ngeogs + "nis_buffer_0_5mile;" + project_path + "data/input/census/census.gdb/zcta_2000",ngeogs + "nis_buffer_0_5mile_zt2000_int","ALL","#","INPUT")
 
 print 'add newtractarea and pcttract area fields'
 arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_ct2000_int","newtractarea","DOUBLE","#","#","#","#","NULLABLE","NON_REQUIRED","#")
 arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_ct2000_int","pcttractarea","FLOAT","#","#","#","#","NULLABLE","NON_REQUIRED","#")
+arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_ct2010_int","newtractarea","DOUBLE","#","#","#","#","NULLABLE","NON_REQUIRED","#")
+arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_ct2010_int","pcttractarea","FLOAT","#","#","#","#","NULLABLE","NON_REQUIRED","#")
 arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_zt2000_int","newzctaarea","DOUBLE","#","#","#","#","NULLABLE","NON_REQUIRED","#")
 arcpy.AddField_management(ngeogs + "nis_buffer_0_5mile_zt2000_int","pctzctaarea","FLOAT","#","#","#","#","NULLABLE","NON_REQUIRED","#")
    
 print 'calc newtractarea and pcttract area fields'     
 arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_ct2000_int","newtractarea","!shape.area@squaremeters!","PYTHON","#")
 arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_ct2000_int","pcttractarea","!newtractarea! / !origtractarea! ","PYTHON","#")
+arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_ct2010_int","newtractarea","!shape.area@squaremeters!","PYTHON","#")
+arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_ct2010_int","pcttractarea","!newtractarea! / !origtractarea! ","PYTHON","#")
 arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_zt2000_int","newzctaarea","!shape.area@squaremeters!","PYTHON","#")
 arcpy.CalculateField_management(ngeogs + "nis_buffer_0_5mile_zt2000_int","pctzctaarea","!newzctaarea! / !origzctaarea! ","PYTHON","#")
 
