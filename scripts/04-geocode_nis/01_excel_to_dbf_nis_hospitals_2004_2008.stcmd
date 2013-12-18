@@ -1,0 +1,27 @@
+// This Stat/Transfer command file was automatically generated on November 7, 2013 at 1:05 PM (v11.2.2106.0521, Windows NT 6.1 (build 7601, Service Pack 1))
+//ENCODING UTF-8
+set numeric-names      n
+set log-level          e
+set in-encoding        system
+set out-encoding       system
+set enc-errors         sub
+set enc-sub-char       _
+set enc-error-limit    100
+set var-case-ci        preserve-always
+set prog-preserve-widths n
+set preserve-str-widths n
+set wks-data-range     autosense
+set wks-var-labs-2nd-row n
+set wks-name-row       autosense
+set wks-blank-rows     stop
+set concatenate-pages  n
+set wks-NA-string      none
+set date-fmt-write     "%m/%d/%Y"
+set time-fmt-write     "%0H:%0M:%0S"
+set datetime-fmt-write "%m/%d/%Y %0H:%0M:%0S"
+set num-miss-wr        none
+set write-old-ver      N
+
+copy  "E:/SpiderOak/projects/hospitals/data/_original/nis/NIS Hospitals 2004-2008.xlsx" xbase E:/SpiderOak/projects/hospitals/data/_original/nis/nis_hospitals_2004_2008.dbf 
+
+quit

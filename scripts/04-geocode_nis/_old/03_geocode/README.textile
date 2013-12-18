@@ -1,0 +1,62 @@
+<pre><code>   ______                   __      ______                           __          
+  / ____/____  ____  ____ _/ /___  / ____/___  ____  _________  ____/ /___  _____
+ / / __ / __ \/ __ \/ __ `/ // _ \/ / __ / _ \/ __ \/ ___/ __ \/ __  // _ \/ ___/
+/ /_/ // /_/ / /_/ / /_/ / //  __/ /_/ //  __/ /_/ / /__/ /_/ / /_/ //  __/ /    
+\____/ \____/\____/\__, /_/ \___/\____/ \___/\____/\___/\____/\__,_/ \___/_/     
+                  /____/                                                        </pre></code>
+
+A simple Python wrapper for version three of Google's geocoder API
+
+h2. Features
+
+* Submit an address and have it geocoded
+* Submit a lat/lng pair and have it reverse-geocoded
+* Results include all data returned by Google, including formatted address, location, viewport, bounds, address type and address components
+* Bias results to a bounding box you provide
+* Bias results to a region you specify by country code
+* Specify a language code
+* No API key required
+
+h2. Getting started
+
+Installation
+
+<pre><code>$ pip install python-googlegeocoder</code></pre>
+
+Geocoding an address
+
+<pre><code>>>> from googlegeocoder import GoogleGeocoder
+>>> geocoder = GoogleGeocoder()
+>>> search = geocoder.get("Watts Towers")
+>>> search
+[<GeocoderResult: Watts Towers Arts Center, 1727 E 107th St, Los Angeles, CA 90002-3621, USA>]
+>>> search[0].geometry.location
+<Coordinates: (33.9395164, -118.2414404)></code></pre>
+
+Reverse geocoding coordinates
+
+<pre><code>>>> reverse = geocoder.get((33.9395164, -118.2414404))
+>>> reverse
+[<GeocoderResult: 1736 E 106th St, Los Angeles, CA 90002, USA>, <GeocoderResult: Watts, Los Angeles, CA, USA>, <GeocoderResult: Los Angeles, CA 90002, USA>, <GeocoderResult: South LA, Los Angeles, CA, USA>, <GeocoderResult: Los Angeles, CA, USA>, <GeocoderResult: Los Angeles, CA, USA>, <GeocoderResult: Los Angeles, California, USA>, <GeocoderResult: California, USA>, <GeocoderResult: United States>]</code></pre>
+
+Viewport biasing
+
+<pre><code>>>> before = geocoder.get("Winnetka")
+>>> before[0]
+<GeocoderResult: Winnetka, IL, USA>
+>>> after = geocoder.get("Winnetka", bounding_box=((34.172684,-118.604794), (34.236144,-118.500938)))
+>>> after[0]
+<GeocoderResult: Winnetka, Los Angeles, CA, USA></code></pre>
+
+Region biasing
+
+<pre><code>>>> before = geocoder.get("Toledo")
+>>> before[0]
+<GeocoderResult: Toledo, OH, USA>
+>>> after = geocoder.get("Toledo", region="ES")
+>>> after[0]
+<GeocoderResult: Toledo, Spain></code></pre>
+
+h2. Resources
+
+* "Google's official documentation":http://code.google.com/apis/maps/documentation/geocoding/

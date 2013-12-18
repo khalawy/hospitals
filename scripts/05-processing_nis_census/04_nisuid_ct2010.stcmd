@@ -1,0 +1,39 @@
+// This Stat/Transfer command file was automatically generated on December 4, 2013 at 1:51 PM (v11.2.2106.0521, Windows NT 6.1 (build 7601, Service Pack 1))
+//ENCODING UTF-8
+set numeric-names      n
+set log-level          e
+set in-encoding        system
+set out-encoding       system
+set enc-errors         sub
+set enc-sub-char       _
+set enc-error-limit    100
+set var-case-cs        preserve-mixed
+set line-end           win
+set preserve-str-widths n
+set delimiter-rd       autosense
+set quote-char-rd      "
+set ascii-rd-vnames    autosense
+set max-lines          all
+set skip-rows          0
+set date-fmt-read      "%m[/]%d[/][,]%y[%$c]"
+set time-fmt-read      "%H:%M[:%S[.%N]][%p][[(]%3c[)]]"
+set datetime-fmt-read  "[%m[/]%d[/][,]%y] [%H:%M[:%S[.%N]][%p][[(]%3c[)]]]"
+set date-scan-fmt      "[%m[/]%d[/][,]%y] [%H:%M[:%S[.%N]][%p][[(]%3c[)]]]"
+set century-cutoff     20
+set num-miss-rd        none
+set decimal-point      .
+set thousands-sep      ,
+set date-fmt-write     "%m/%d/%Y"
+set time-fmt-write     "%0H:%0M:%0S"
+set datetime-fmt-write "%m/%d/%Y %0H:%0M:%0S"
+set num-miss-wr        none
+
+#delimit ;
+types inline
+   GEOID10 string
+;
+#delimit cr
+
+copy  W:/GIS/Projects/hospitals/data/processing_nis/nis_census_tables/nisuid_ct2010.csv stata W:/GIS/Projects/hospitals/data/processing_nis/nis_census_tables/nisuid_ct2010.dta 
+
+quit

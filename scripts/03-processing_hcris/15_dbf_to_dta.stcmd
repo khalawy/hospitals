@@ -1,0 +1,17 @@
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_agesexrace.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_agesexrace.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hrb_agesexrace.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hrb_agesexrace.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\trt_agesexrace.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\trt_agesexrace.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_econ.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_econ.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hrb_econ.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hrb_econ.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\trt_econ.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\trt_econ.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_education.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_education.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hrb_education.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hrb_education.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\trt_education.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\trt_education.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_lingiso.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_lingiso.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hrb_lingiso.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hrb_lingiso.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\trt_lingiso.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\trt_lingiso.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_poverty.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_poverty.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hrb_poverty.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hrb_poverty.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\trt_poverty.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\trt_poverty.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\hospitals.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\hcris.dta
+copy E:\SpiderOak\projects\hospitals\data\output\tables\dbf\cny_health_ins.dbf E:\SpiderOak\projects\hospitals\data\output\tables\dta\cny_health_ins.dta
