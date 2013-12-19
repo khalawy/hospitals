@@ -13,3 +13,6 @@ arcpy.Intersect_analysis("W:/GIS/Projects/hospitals/data/input/census/census.gdb
 #census county 2000 and 2010
 arcpy.Intersect_analysis("W:/GIS/Projects/hospitals/data/input/census/census_2000_counties/tl_2008_us_county/tl_2008_us_county.shp #;W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_xy_project #","W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_intersect_co2000","ALL","#","INPUT")
 arcpy.Intersect_analysis("W:/GIS/Projects/hospitals/data/input/census/census_2010_counties/County_2010Census_DP1.shp #;W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_xy_project #","W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_intersect_co2010","ALL","#","INPUT")
+
+
+arcpy.Intersect_analysis("W:/GIS/Projects/hospitals/data/input/census/census.gdb/zcta_2000 #;W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_xy_project #","W:/GIS/Projects/hospitals/data/processing_nis/nis.gdb/nis_intersect_zt2000","ALL","#","INPUT")
