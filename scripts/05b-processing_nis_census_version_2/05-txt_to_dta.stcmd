@@ -1,0 +1,10 @@
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_agesexrace_freq.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_agesexrace_freq.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_econ_freq.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_econ_freq.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_education_freq.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_education_freq.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_lingiso_freq.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_lingiso_freq.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_poverty_freq.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_bint_poverty_freq.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_agesexrace.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_agesexrace.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_econ.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_econ.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_education.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_education.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_lingiso.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_lingiso.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_poverty.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\tract_vars\nis_ct2000_nest_poverty.dta
