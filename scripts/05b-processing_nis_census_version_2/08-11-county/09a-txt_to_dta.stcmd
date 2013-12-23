@@ -1,0 +1,5 @@
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_agesexrace.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_agesexrace.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_econ.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_econ.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_education.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_education.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_lingiso.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_lingiso.dta
+copy W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_poverty.txt W:\GIS\Projects\hospitals\data\processing_nis\variables\county_vars\nis_co2000_poverty.dta
